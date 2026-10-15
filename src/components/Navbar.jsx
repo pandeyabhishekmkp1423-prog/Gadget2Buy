@@ -28,8 +28,8 @@ export function Navbar({
       {/* Sleek, Minimal Top Announcement Bar */}
       <div className="announcement-bar">
         <div className="container announcement-inner">
-          <div>
-            Free express delivery across India &middot; Cash on delivery available &middot; 7-day doorstep replacement
+          <div className="announcement-text">
+            Free Express Delivery &middot; Cash on Delivery Available &middot; 7-Day Doorstep Replacement
           </div>
           <div className="announcement-links">
             <a href={telUrl} style={{ color: '#ffffff', textDecoration: 'none' }}>
@@ -143,20 +143,18 @@ export function Navbar({
             rel="noopener noreferrer"
             className="nav-btn whatsapp"
             title="Chat on WhatsApp"
-            style={{ fontWeight: 600, fontSize: '0.825rem', padding: '0.5rem 0.85rem' }}
           >
             <MessageCircle size={15} />
-            <span>WhatsApp</span>
+            <span className="nav-btn-text">WhatsApp</span>
           </a>
 
           <a
             href={telUrl}
             className="nav-btn primary"
             title="Call Helpline"
-            style={{ fontWeight: 600, fontSize: '0.825rem', padding: '0.5rem 0.95rem' }}
           >
             <Phone size={14} />
-            <span>Call Us</span>
+            <span className="nav-btn-text">Call Us</span>
           </a>
         </div>
       </div>
@@ -187,8 +185,7 @@ export function Navbar({
           ))}
 
           <span
-            className="sub-nav-item"
-            style={{ marginLeft: 'auto', color: 'var(--text-muted)', fontSize: '0.8rem', fontWeight: 600 }}
+            className="sub-nav-item sub-nav-tagline"
             onClick={() => onNavigate('terms')}
           >
             Zero Card Needed &middot; Pay on Delivery

@@ -125,14 +125,7 @@ export function HomePage({
         />
 
         {/* 4-Step "How Zero-Card Assisted Ordering Works" */}
-        <div style={{
-          background: 'linear-gradient(135deg, #1e40af 0%, #1d4ed8 100%)',
-          borderRadius: 'var(--radius-xl)',
-          padding: '2.5rem 2rem',
-          color: '#ffffff',
-          marginBottom: '3.5rem',
-          boxShadow: '0 12px 25px -5px rgba(30, 64, 175, 0.25)',
-        }}>
+        <div className="assisted-order-box">
           <div style={{ textAlign: 'center', maxWidth: '640px', margin: '0 auto 2.25rem' }}>
             <span style={{
               background: 'rgba(255,255,255,0.2)',
@@ -153,11 +146,7 @@ export function HomePage({
             </p>
           </div>
 
-          <div style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
-            gap: '1.75rem',
-          }}>
+          <div className="assisted-steps-grid">
             <div style={{ background: 'rgba(255,255,255,0.1)', padding: '1.5rem', borderRadius: 'var(--radius-lg)', backdropFilter: 'blur(8px)' }}>
               <div style={{ width: '38px', height: '38px', borderRadius: '50%', background: '#ffffff', color: '#1e40af', fontWeight: 800, display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '0.85rem' }}>
                 1
@@ -357,18 +346,7 @@ export function HomePage({
         </div>
 
         {/* Direct Helpline / WhatsApp Banner */}
-        <div style={{
-          background: '#eff6ff',
-          border: '1px solid var(--primary-border)',
-          borderRadius: 'var(--radius-xl)',
-          padding: '2.5rem 2rem',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'space-between',
-          flexWrap: 'wrap',
-          gap: '1.5rem',
-          marginTop: '2rem',
-        }}>
+        <div className="helpline-banner">
           <div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--primary)', fontWeight: 800, fontSize: '0.85rem', marginBottom: '0.35rem' }}>
               <Clock size={16} />

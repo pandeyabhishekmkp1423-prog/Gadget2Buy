@@ -43,12 +43,7 @@ export function CategoryVisualCards({ categories = [], selectedCategory, onSelec
         )}
       </div>
 
-      <div style={{
-        display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fit, minmax(170px, 1fr))',
-        gap: '1.25rem',
-        marginTop: '1.25rem',
-      }}>
+      <div className="dept-grid">
         {categories.map((cat) => {
           const isSelected = selectedCategory === cat.name;
           const bgImg = categoryImages[cat.name];

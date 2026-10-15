@@ -69,6 +69,13 @@ button, input, textarea, select {
   padding-right: 1.25rem;
 }
 
+@media (max-width: 768px) {
+  .container {
+    padding-left: 0.85rem;
+    padding-right: 0.85rem;
+  }
+}
+
 /* Tabular Numbers for Prices */
 .price-num {
   font-variant-numeric: tabular-nums;
