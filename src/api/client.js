@@ -12,8 +12,11 @@ export function getCsrfToken() {
   return cachedCsrfToken;
 }
 
+const API_BASE = (import.meta.env.VITE_API_URL || '').replace(/\/+$/, '');
+
 export async function apiRequest(endpoint, options = {}) {
-  const url = endpoint.startsWith('/') ? endpoint : `/api/${endpoint}`;
+  const path = endpoint.startsWith('/') ? endpoint : `/api/${endpoint}`;
+  const url = API_BASE ? `${API_BASE}${path}` : path;
   
   const headers = {
     Accept: 'application/json',
